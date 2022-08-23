@@ -1,0 +1,27 @@
+{
+    "name": "miome/iso8583",
+    "description": "ISO8583 Pack/Unpack library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "w1n2k",
+            "email": "cryfall@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"ISO8583\\": "src/"}
+    },
+    "version": "1.2.1",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/m1ome/iso8583"
+        }
+    ],
+    "require": {
+        "php": ">=5.5"
+    },
+    "require-dev": {
+        "kahlan/kahlan": "^3.0"
+    }
+}

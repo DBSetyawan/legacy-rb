@@ -1,0 +1,46 @@
+<?php
+set_time_limit(120);
+
+include_once("lib/xmlrpc.inc");
+include_once("lib/xmlrpcs.inc");
+include_once("lib/xmlrpc_wrappers.inc");
+require_once("include/config.inc.php");
+require_once("include/function.php");
+
+if ($HTTP_RAW_POST_DATA == "") {
+    echo "IP Anda: " . getClientIP();//$_SERVER['REMOTE_ADDR'];
+} else if (strpos($HTTP_RAW_POST_DATA,"rajabiller.cekip")) {		
+    $s = new xmlrpc_server(
+                    array(
+                	"rajabiller.cekip" => array("function" => "cekip")
+                    ), false);
+
+    $s->setdebug(0);
+    $s->compress_response = false;
+    $s->service();
+} else {
+	$msg = $HTTP_RAW_POST_DATA;
+	$url = "https://10.0.51.2/transaksi/index2.php?ip=".getClientIP();//$_SERVER['REMOTE_ADDR'];
+
+	$ch = curl_init();
+	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+	curl_setopt($ch, CURLOPT_POST, true);
+	curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+	curl_setopt($ch, CURLOPT_POSTFIELDS, $msg);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	curl_setopt($ch, CURLOPT_URL, $url);
+	curl_setopt($ch, CURLOPT_REFERER, $url);
+	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+	curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+                'Content-Type: application/text')
+        );
+	$serverResponse = curl_exec($ch);
+
+	echo $serverResponse;	
+}
+
+function cekip(){
+    return new xmlrpcresp(php_xmlrpc_encode(getClientIP()));
+}    
+
+?>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="sbf-tomo-web" basedir="." default="help">
+
+	<property file="jenkins-build.properties" />
+
+	<target name="help" description="Print out help">
+		<echo>Build file for ${implementation.vendor}'s ${implementation.title} project via Jenkins, prepared by awicaksi@gmail.com.</echo>
+		<echoproperties prefix="implementation" />
+	</target>
+
+	<target name="phpmd" description="Generate pmd.xml using PHPMD">
+		<mkdir dir="build/logs"/>
+		<exec executable="phpmd">
+			<arg value="${basedir}" />
+			<arg value="xml" />
+			<arg value="sqapm.xml" />
+			<arg value="--reportfile" />
+			<arg value="${basedir}/build/logs/pmd.xml" />
+			<arg value="--exclude" />
+			<arg value=".svn,logs" />
+		</exec>
+	</target>
+</project>

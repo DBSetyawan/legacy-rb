@@ -1,0 +1,87 @@
+<?php
+$__CFG_dbhost = "10.0.0.50";
+$__CFG_dbuser = "fmss";
+$__CFG_dbpass = "S3su4tu_R4h4s14";
+$__CFG_dbname = "fmss";
+$__CFG_dbport = "5433";
+
+// log
+$__CFG_dbhost_log = "10.2.255.22";
+$__CFG_dbuser_log = "fmss";
+$__CFG_dbpass_log = "S3su4tu_R4h4s14";
+$__CFG_dbname_log = "fmss_data";
+$__CFG_dbport_log = "5432";
+$__G_conn_prop_log="host=" . $__CFG_dbhost_log . " port=" . $__CFG_dbport_log . " dbname=" . $__CFG_dbname_log . " user=" . $__CFG_dbuser_log . " password=" . $__CFG_dbpass_log;
+
+
+$__CFG_dbhost_devel = "localhost";
+$__CFG_dbuser_devel = "fmss";
+$__CFG_dbpass_devel = "rahasia";
+$__CFG_dbname_devel = "fmss";
+$__CFG_dbport_devel = "5432";
+
+$__CFG_dbhost_D = "10.0.9.88";
+$__CFG_dbuser_D = "fmss";
+$__CFG_dbpass_D = "rahasia";
+$__CFG_dbname_D = "fmss";
+$__CFG_dbport_D = "5432";
+$__G_conn_devel="host=" . $__CFG_dbhost_D . " port=" . $__CFG_dbport_D . " dbname=" . $__CFG_dbname_D . " user=" . $__CFG_dbuser_D . " password=" . $__CFG_dbpass_D;
+
+$__G_module_name = "MP_XML1";
+$__G_via = "H2H";
+$__G_receiver = "FMSS_MPIN1";
+
+$__CFG_urltargetip = "10.0.0.14";
+$__CFG_urltargetport = "88";
+$__CFG_urltarget = "/FMSSWeb2/mpin1";
+
+$__CFG_urltargetip_duapuluh = "10.0.0.14";
+$__CFG_urltargetport_duapuluh = "88";
+$__CFG_urltarget_duapuluh = "/FMSSWeb2/mpin1";
+
+$__CFG_urltargetip_fmssweb4 = "10.0.0.14";
+$__CFG_urltargetport_fmssweb4 = "88";
+$__CFG_urltarget_fmssweb4 = "/FMSSWeb2/mpin1";
+
+$__CFG_urltargetip_fmssweb5 = "10.0.0.14";
+$__CFG_urltargetport_fmssweb5 = "88";
+$__CFG_urltarget_fmssweb5 = "/FMSSWeb2/mpin1";
+
+$__CFG_urltargetip_fmssweb2 = "10.0.0.14";
+$__CFG_urltargetport_fmssweb2 = "88";
+$__CFG_urltarget_fmssweb2 = "/FMSSWeb2/mpin1";
+
+$__CFG_urltargetip_fmssweb3 = "10.0.0.14";
+$__CFG_urltargetport_fmssweb3 = "21080";
+$__CFG_urltarget_fmssweb3 = "/FMSSWeb3/mpin1";
+
+// Config KAI - Hello trans
+$__CFG_dbhost_jarvis = "10.0.1.15";
+$__CFG_dbuser_jarvis = "fmss";
+$__CFG_dbpass_jarvis = "rahasia";
+$__CFG_dbname_jarvis = "fmss";
+$__CFG_dbport_jarvis = "5432";
+
+$__CFG_urltargetip_jarvis = "10.0.1.15";
+$__CFG_urltargetport_jarvis = "8222";
+$__CFG_urltarget_jarvis = "/FMSSWeb/mpin1";
+
+// Config Kai Live
+
+$__CFG_urltargetip_kai = "10.0.0.14";
+$__CFG_urltargetport_kai = "88";
+$__CFG_urltarget_kai = "/FMSSWeb/mpin1";
+$__G_conn_prop="host=" . $__CFG_dbhost . " port=" . $__CFG_dbport . " dbname=" . $__CFG_dbname . " user=" . $__CFG_dbuser . " password=" . $__CFG_dbpass;
+
+$__CFG_dbhost_RO = "10.0.0.53";
+$__CFG_dbuser_RO = "fmss_rajabiller";
+$__CFG_dbpass_RO = "S3su4tu_R4h4s14";
+$__CFG_dbname_RO = "fmss";
+$__CFG_dbport_RO = "5439";
+$__G_conn_prop_RO="host=" . $__CFG_dbhost_RO . " port=" . $__CFG_dbport_RO . " dbname=" . $__CFG_dbname_RO . " user=" . $__CFG_dbuser_RO . " password=" . $__CFG_dbpass_RO;
+$__G_selisih=40;
+
+$__CFG_urltargetip_pdam = "10.0.0.14";
+$__CFG_urltargetport_pdam = "88";
+$__CFG_urltarget_pdam = "/FMSSWeb2/mpin1";
+?>

@@ -1,0 +1,10 @@
+{
+    "0200": {
+        "class": "Inquiry",
+        "description": "Message Inquiry"
+    },
+    "0210": {
+        "class": "Payment",
+        "description": "Message Payment"
+    }
+}
